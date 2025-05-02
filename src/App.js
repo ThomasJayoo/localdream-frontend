@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
-
+import FocusSection from "./components/FocusSection";
 import NewsGrid from "./components/NewsGrid";
-import YoutubeSection from "./components/YoutubeSection"; // ✅ 추가
+
 import "./App.css";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <Header />
       <FocusSection />
       <NewsGrid newsData={newsData} />
-      <YoutubeSection /> {/* ✅ 분리된 컴포넌트 삽입 */}
+      <YoutubeSection />
     </div>
   );
 }
