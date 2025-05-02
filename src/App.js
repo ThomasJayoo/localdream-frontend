@@ -19,6 +19,11 @@ function App() {
       <FocusSection />
       <NewsGrid newsData={newsData} />
     </div>
+<div className="video-grid">
+  <iframe src="https://youtu.be/KCyNIAeVHQA?si=XJdSSaQdl3-eW-ov" />
+  <iframe src="https://youtu.be/fM4BuCgM0CI?si=-_KO3CAj7avbTRHb" />
+</div>
+
   );
 }
 

@@ -1,0 +1,7 @@
+/* App.css 파일 맨 아래에 추가 */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
