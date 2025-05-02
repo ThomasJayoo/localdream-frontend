@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import FocusSection from "./components/FocusSection";
 import NewsGrid from "./components/NewsGrid";
-
+import YoutubeSection from "./components/YoutubeSection"; // 새 컴포넌트
 import "./App.css";
 
 function App() {
