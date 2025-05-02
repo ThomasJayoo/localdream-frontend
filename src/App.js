@@ -20,7 +20,7 @@ function App() {
       <Header />
       <FocusSection />
       <NewsGrid newsData={newsData} />
-      <YoutubeSection />
+      
     </div>
   );
 }
