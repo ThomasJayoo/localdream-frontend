@@ -20,23 +20,22 @@ function App() {
       <FocusSection />
       <NewsGrid newsData={newsData} />
 
-      {/* 유튜브 영상 2열 배치 */}
-      <h2 className="<h2 className="text-xl font-semibold mt-10 mb-4 text-blue-500">
-  화제의 인물 (Youtube)
-</h2>
+      <h2 className="text-xl font-semibold mt-10 mb-4 text-blue-500">
+        화제의 인물 (Youtube)
+      </h2>
       <div className="video-grid">
         <iframe
           src="https://www.youtube.com/embed/KCyNIAeVHQA"
           title="Video 1"
           allowFullScreen
           style={{ width: "100%", height: "215px", border: "none" }}
-        />
+        ></iframe>
         <iframe
           src="https://www.youtube.com/embed/fM4BuCgM0CI"
           title="Video 2"
           allowFullScreen
           style={{ width: "100%", height: "215px", border: "none" }}
-        />
+        ></iframe>
       </div>
     </div>
   );
