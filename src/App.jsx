@@ -1,10 +1,26 @@
-import React from "react";
-import NewsByCategory from "./NewsByCategory_responsive"; // ✅ 경로와 이름 확인
+import React, { useEffect, useState } from "react";
+import Header from "./components/Header";
+import YoutubeSection from "./components/YoutubeSection"; // 새 컴포넌트
+import NewsGrid from "./components/NewsGrid";
+
+import "./App.css";
 
 function App() {
+  const [newsData, setNewsData] = useState({});
+
+  useEffect(() => {
+    fetch("/news.json")
+      .then((res) => res.json())
+      .then((data) => setNewsData(data))
+      .catch((err) => console.error("❌ 뉴스 로딩 실패:", err));
+  }, []);
+
   return (
-    <div className="App">
-      <NewsByCategory />
+    <div className="container mx-auto px-4 py-6">
+      <Header />
+      <FocusSection />
+      <NewsGrid newsData={newsData} />
+      <YoutubeSection />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
-import FocusSection from "./components/FocusSection";
+
 import NewsGrid from "./components/NewsGrid";
 import "./App.css"; // 반드시 포함
 
