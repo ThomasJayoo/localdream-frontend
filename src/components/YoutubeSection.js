@@ -1,5 +1,4 @@
 import React from "react";
-import "./YoutubeSection.css"; // 선택적으로 별도 스타일 분리 가능
 
 const YoutubeSection = () => {
   return (
