@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
-import FocusSection from "./components/FocusSection";
+
 import NewsGrid from "./components/NewsGrid";
-import "./App.css"; // 반드시 포함
+import YoutubeSection from "./components/YoutubeSection"; // ✅ 추가
+import "./App.css";
 
 function App() {
   const [newsData, setNewsData] = useState({});
@@ -15,7 +16,12 @@ function App() {
   }, []);
 
   return (
-
+    <div className="container mx-auto px-4 py-6">
+      <Header />
+      <FocusSection />
+      <NewsGrid newsData={newsData} />
+      <YoutubeSection /> {/* ✅ 분리된 컴포넌트 삽입 */}
+    </div>
   );
 }
 
