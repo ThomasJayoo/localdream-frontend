@@ -1,0 +1,16 @@
+<link rel="apple-touch-startup-image" href="/splash-1920x1080.png">
+{
+  "short_name": "로컬드림",
+  "name": "로컬드림 뉴스 플랫폼",
+"icons": [
+  {
+    "src": "/icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+],
+"start_url": ".",
+"display": "standalone",
+"background_color": "#2d64ff",
+"theme_color": "#2d64ff"
+}

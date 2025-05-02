@@ -1,0 +1,46 @@
+{
+  "커뮤니티뉴스": [
+    {
+      "local": "진도군",
+      "title": "진도군, 귀농 정착 지원금 확대",
+      "url": "https://www.jindo.go.kr/news/101",
+      "date": "2025-04-22"
+    },
+    {
+      "local": "진도군",
+      "title": "진도읍 농촌중심지 사업 착공",
+      "url": "https://www.jindo.go.kr/news/105",
+      "date": "2025-04-18"
+    },
+    {
+      "local": "완도군",
+      "title": "완도군, 주민 참여형 커뮤니티센터 개관",
+      "url": "https://www.wando.go.kr/news/106",
+      "date": "2025-04-17"
+    }
+  ],
+  "축제": [
+    {
+      "local": "해남군",
+      "title": "해남군, 봄맞이 벚꽃 축제 개최",
+      "url": "https://www.haenam.go.kr/news/102",
+      "date": "2025-04-21"
+    }
+  ],
+  "복지": [
+    {
+      "local": "신안군",
+      "title": "신안군, 복지 사각지대 해소 위한 예산 증액",
+      "url": "https://www.shinan.go.kr/news/103",
+      "date": "2025-04-20"
+    }
+  ],
+  "관광홍보": [
+    {
+      "local": "완도군",
+      "title": "완도군, 해양치유 관광지 조성 본격화",
+      "url": "https://www.wando.go.kr/news/104",
+      "date": "2025-04-19"
+    }
+  ]
+}
