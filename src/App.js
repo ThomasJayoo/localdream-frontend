@@ -21,7 +21,9 @@ function App() {
       <NewsGrid newsData={newsData} />
 
       {/* 유튜브 영상 2열 배치 */}
-      <h2 className="text-xl font-semibold mt-10 mb-4">화제의 인물 (Youtube)</h2>
+      <h2 className="<h2 className="text-xl font-semibold mt-10 mb-4 text-blue-500">
+  화제의 인물 (Youtube)
+</h2>
       <div className="video-grid">
         <iframe
           src="https://www.youtube.com/embed/KCyNIAeVHQA"
