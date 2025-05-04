@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
-import YoutubeSection from "./components/YoutubeSection"; // 새 컴포넌트
+import YoutubeSection from "./components/YoutubeSection";
 import NewsGrid from "./components/NewsGrid";
 
 import "./App.css";
@@ -18,7 +18,6 @@ function App() {
   return (
     <div className="container mx-auto px-4 py-6">
       <Header />
-      <FocusSection />
       <NewsGrid newsData={newsData} />
       <YoutubeSection />
     </div>
