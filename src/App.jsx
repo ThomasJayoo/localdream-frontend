@@ -18,8 +18,8 @@ function App() {
   return (
     <div className="container mx-auto px-4 py-6">
       <Header />
+      <YoutubeSection />{/* ← 맨 위에 위치시킴 */}
       <NewsGrid newsData={newsData} />
-      <YoutubeSection />
     </div>
   );
 }
