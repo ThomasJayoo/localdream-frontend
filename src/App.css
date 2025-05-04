@@ -4,8 +4,3 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 }
-@media (min-width: 768px) {
-  .video-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
