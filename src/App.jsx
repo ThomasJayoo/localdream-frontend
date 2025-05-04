@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
-import YoutubeSection from "./components/YoutubeSection";
 import NewsGrid from "./components/NewsGrid";
-
+import YoutubeSection from "./components/YoutubeSection";
 import "./App.css";
 
 function App() {
@@ -17,8 +16,8 @@ function App() {
 
   return (
     <div className="container mx-auto px-4 py-6">
+      <YoutubeSection />
       <Header />
-      <YoutubeSection />{/* ← 맨 위에 위치시킴 */}
       <NewsGrid newsData={newsData} />
     </div>
   );
