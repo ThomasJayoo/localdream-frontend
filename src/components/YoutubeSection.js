@@ -1,5 +1,6 @@
 // src/components/YoutubeSection.js
 import React from "react";
+import "./YoutubeSection.css"; // 아래에 작성된 CSS 포함
 
 const videos = [
   {
@@ -14,19 +15,18 @@ const videos = [
 
 const YoutubeSection = () => {
   return (
-    <div className="mt-10">
-      <h2 className="text-xl font-bold mb-4">집중 논단 / 촛점 인터뷰 (Youtube)</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="Youtube-scetion">
+ <h2 className="youtube-title">🔥 집중 영상 (Youtube)</h2>
+      <div className="video-grid">
         {videos.map((video, index) => (
-          <div key={index}>
+          <div key={index} className="video-item">
             <iframe
               src={video.url}
               title={video.title}
               allowFullScreen
-              className="w-full"
-              style={{ height: "215px", border: "none" }}
+              className="video-frame"
             />
-            <p className="mt-2 text-sm text-center">{video.title}</p>
+            <p className="video-title">{video.title}</p>
           </div>
         ))}
       </div>

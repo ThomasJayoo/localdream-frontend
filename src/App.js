@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
-import NewsGrid from "./components/NewsGrid";
 import YoutubeSection from "./components/YoutubeSection";
+import NewsGrid from "./components/NewsGrid";
+
 import "./App.css";
 
 function App() {

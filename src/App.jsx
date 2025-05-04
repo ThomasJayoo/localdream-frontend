@@ -15,10 +15,14 @@ function App() {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-6">
-      <YoutubeSection />
+    <div className="container">
+      <YoutubeSection /> {/* 반드시 항상 렌더 */}
       <Header />
-      <NewsGrid newsData={newsData} />
+      {Object.keys(newData).length > 0 ? ( 
+        <NewsGrid newsData={newsData} />
+      ) : (
+        <p className="text-gray-400 text-sm mt-4"> 뉴스 로딩중입니다. ...</p>  
+      )}    
     </div>
   );
 }

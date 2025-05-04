@@ -1,6 +1,34 @@
-/* App.css 또는 YoutubeSection.css */
+.youtube-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.youtube-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-frame {
+  width: 100%;
+  height: 215px;
+  border: none;
+}
+
+.video-title {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
 }
