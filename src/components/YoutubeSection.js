@@ -1,5 +1,5 @@
 // src/components/YoutubeSection.js
-import React from "react";
+
 import "./YoutubeSection.css"; // 아래에 작성된 CSS 포함
 
 const videos = [
@@ -13,23 +13,20 @@ const videos = [
   }
 ];
 
-const YoutubeSection = () => {
+export default function YoutubeSection() {
   return (
-    <div className="Youtube-scetion">
- <h2 className="youtube-title">🔥 집중 영상 (Youtube)</h2>
-      <div className="video-grid">
-        {videos.map((video, index) => (
-          <div key={index} className="video-item">
-            <iframe
-              src={video.url}
-              title={video.title}
-              allowFullScreen
-              className="video-frame"
-            />
-            <p className="video-title">{video.title}</p>
-          </div>
-        ))}
-      </div>
+     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {videos.map((video, i) => (
+        <div key={i} className="aspect-video">
+          <iframe
+            title={video.title}
+            src={video.url}
+            frameBorder="0"
+            allowFullScreen
+            className="w-full h-full"
+          ></iframe>
+        </div>
+      ))}
     </div>
   );
 };
