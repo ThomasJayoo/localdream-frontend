@@ -11,16 +11,19 @@ const videos = [
 
 export default function YoutubeSection() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
       {videos.map((video, i) => (
-        <div key={i} className="relative w-full" style={{ paddingBottom: '56.25%', height: 0 }}>
-          <iframe
-            title={video.title}
-            src={video.url}
-            frameBorder="0"
-            allowFullScreen
-            className="absolute top-0 left-0 w-full h-full"
-          ></iframe>
+        <div key={i} className="w-full">
+          <div className="text-lg font-semibold text-gray-800 mb-2">{video.title}</div>
+          <div className="relative w-full" style={{ paddingBottom: '56.25%', height: 0 }}>
+            <iframe
+              title={video.title}
+              src={video.url}
+              frameBorder="0"
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full rounded-md shadow"
+            ></iframe>
+          </div>
         </div>
       ))}
     </div>

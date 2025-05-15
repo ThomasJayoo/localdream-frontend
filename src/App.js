@@ -1,16 +1,18 @@
 import React from "react";
 import YoutubeSection from "./components/YoutubeSection";
 import NewsByCategory from "./NewsByCategory";
-
 function App() {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <div className="max-w-5xl mx-auto py-8">
+      <header className="bg-white shadow-md p-4 mb-6">
+        <h1 className="text-2xl font-bold text-center text-teal-700">LocalDream 뉴스 포털</h1>
+      </header>
+
+      <main className="max-w-5xl mx-auto px-4">
         <YoutubeSection />
         <NewsByCategory />
-      </div>
+      </main>
     </div>
   );
 }
-
 export default App;
