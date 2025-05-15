@@ -1,23 +1,19 @@
-// src/components/YoutubeSection.js
-
-import "./YoutubeSection.css"; // 아래에 작성된 CSS 포함
-
 const videos = [
   {
     title: "집중 논단",
     url: "https://www.youtube.com/embed/KCyNIAeVHQA"
   },
   {
-    title: "촛점 인터뷰",
+    title: "초청 인터뷰",
     url: "https://www.youtube.com/embed/fM4BuCgM0CI"
   }
 ];
 
 export default function YoutubeSection() {
   return (
-     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
       {videos.map((video, i) => (
-        <div key={i} className="aspect-video">
+        <div key={i} className="w-full aspect-video">
           <iframe
             title={video.title}
             src={video.url}
@@ -29,6 +25,4 @@ export default function YoutubeSection() {
       ))}
     </div>
   );
-};
-
-export default YoutubeSection;
+}
