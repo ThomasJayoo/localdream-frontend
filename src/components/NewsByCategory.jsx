@@ -11,18 +11,9 @@ function formatKoreanDate(dateObj) {
   return `${year}년 ${month}월 ${date}일 ${day}`;
 }
 
-// 지역별로 최신 뉴스 1개만 유지 → 날짜순 정렬 → top5 + archive 분리
+// 카테고리별로 최신순 정렬 후 top5 + archive
 function processCategoryNews(items) {
-  const map = new Map();
-  for (const item of items) {
-    const existing = map.get(item.local);
-    if (!existing || new Date(item.date) > new Date(existing.date)) {
-      map.set(item.local, item);
-    }
-  }
-  const sorted = Array.from(map.values()).sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
-  );
+  const sorted = [...items].sort((a, b) => new Date(b.date) - new Date(a.date));
   return {
     top5: sorted.slice(0, 5),
     archive: sorted.slice(5)
@@ -64,10 +55,9 @@ export default function NewsByCategory() {
 
   return (
     <div className="p-4 max-w-screen-xl mx-auto">
-      {/* 날짜 + 로고 */}
-      <div className="flex justify-between items-center mb-6">
-        <div className="text-sm text-gray-600 font-medium">📅 {todayStr}</div>
-        <h1 className="text-2xl font-bold text-blue-800">로컬드림</h1>
+      {/* 날짜만 타이틀로 표시 */}
+      <div className="text-center mb-6">
+        <h1 className="text-xl font-bold text-blue-700">📅 {todayStr}</h1>
       </div>
 
       {/* 뉴스 섹션 */}
