@@ -3,7 +3,7 @@ from collections import defaultdict
 from datetime import datetime
 
 # 입력 파일 경로
-input_file = "notice_links_all.json"
+input_file = "notice_links_all_with_category.json"
 output_file = "news.json"
 
 # 기본 변환 로직

@@ -3,3 +3,4 @@ build/
 .vercel/
 .env
 .vercel
+news.json 
