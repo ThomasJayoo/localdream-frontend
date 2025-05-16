@@ -11,6 +11,24 @@ function formatKoreanDate(dateObj) {
   return `${year}년 ${month}월 ${date}일 ${day}`;
 }
 
+// 지역별로 최신 뉴스 1개만 유지 → 날짜순 정렬 → top5 + archive 분리
+function processCategoryNews(items) {
+  const map = new Map();
+  for (const item of items) {
+    const existing = map.get(item.local);
+    if (!existing || new Date(item.date) > new Date(existing.date)) {
+      map.set(item.local, item);
+    }
+  }
+  const sorted = Array.from(map.values()).sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
+  return {
+    top5: sorted.slice(0, 5),
+    archive: sorted.slice(5)
+  };
+}
+
 export default function NewsByCategory() {
   const [newsData, setNewsData] = useState({});
   const [showArchive, setShowArchive] = useState({});
@@ -21,7 +39,9 @@ export default function NewsByCategory() {
       .then((res) => res.json())
       .then((data) => {
         const filtered = Object.fromEntries(
-          Object.entries(data).filter(([category]) => allowedCategories.includes(category))
+          Object.entries(data)
+            .filter(([category]) => allowedCategories.includes(category))
+            .map(([category, items]) => [category, processCategoryNews(items)])
         );
         setNewsData(filtered);
       })
@@ -44,23 +64,24 @@ export default function NewsByCategory() {
 
   return (
     <div className="p-4 max-w-screen-xl mx-auto">
-      <div className="text-center mb-4 text-sm text-gray-600 font-medium">
-        📅 {todayStr}
+      {/* 날짜 + 로고 */}
+      <div className="flex justify-between items-center mb-6">
+        <div className="text-sm text-gray-600 font-medium">📅 {todayStr}</div>
+        <h1 className="text-2xl font-bold text-blue-800">로컬드림</h1>
       </div>
 
+      {/* 뉴스 섹션 */}
       {categoryPairs.map((pair, i) => (
         <div key={i} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-          {pair.map(([category, items]) => {
-            const visibleItems = items.slice(0, 5);
-            const hiddenItems = items.slice(5);
+          {pair.map(([category, data]) => {
             const showMore = showArchive[category];
-            const hasMore = hiddenItems.length > 0;
+            const hasMore = data.archive.length > 0;
 
             return (
               <div key={category}>
                 <h2 className="text-lg font-bold text-blue-600 mb-2">{category}</h2>
                 <div className="space-y-3">
-                  {visibleItems.map((item, idx) => (
+                  {data.top5.map((item, idx) => (
                     <div key={idx} className="border p-3 rounded shadow bg-white">
                       <a
                         href={item.url}
@@ -86,7 +107,7 @@ export default function NewsByCategory() {
 
                     {showMore && (
                       <div className="mt-3 space-y-3">
-                        {hiddenItems.map((item, idx) => (
+                        {data.archive.map((item, idx) => (
                           <div key={idx} className="border p-3 rounded shadow bg-gray-50">
                             <a
                               href={item.url}
