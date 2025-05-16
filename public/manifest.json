@@ -1,7 +1,7 @@
 <link rel="apple-touc<link rel="apple-touch-startup-image" href="/splash-1920x1080.png">
 {
   "short_name": "로컬드림",
-  "name": "로컬드림 뉴스 플랫폼",
+  "name": "로컬드림",
   "icons": [
     {
       "src": "/favicon.ico",
