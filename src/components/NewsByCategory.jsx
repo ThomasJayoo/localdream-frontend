@@ -2,16 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const allowedCategories = ["복지", "축제", "관광홍보", "건설행정", "인구대책", "커뮤니티뉴스"];
 
-function formatKoreanDate(dateObj) {
-  const week = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
-  const year = dateObj.getFullYear();
-  const month = dateObj.getMonth() + 1;
-  const date = dateObj.getDate();
-  const day = week[dateObj.getDay()];
-  return `${year}년 ${month}월 ${date}일 ${day}`;
-}
-
-// 카테고리별로 최신순 정렬 후 top5 + archive
+// 🔧 최신순으로 정렬하고 5개 + 나머지 구분
 function processCategoryNews(items) {
   const sorted = [...items].sort((a, b) => new Date(b.date) - new Date(a.date));
   return {
@@ -23,7 +14,6 @@ function processCategoryNews(items) {
 export default function NewsByCategory() {
   const [newsData, setNewsData] = useState({});
   const [showArchive, setShowArchive] = useState({});
-  const todayStr = formatKoreanDate(new Date());
 
   useEffect(() => {
     fetch("/news.json")
@@ -46,6 +36,7 @@ export default function NewsByCategory() {
     }));
   };
 
+  // 카테고리를 2개씩 묶어 2열 레이아웃 구성
   const categoryPairs = Object.entries(newsData).reduce((acc, cur, idx) => {
     const row = Math.floor(idx / 2);
     if (!acc[row]) acc[row] = [];
@@ -55,12 +46,6 @@ export default function NewsByCategory() {
 
   return (
     <div className="p-4 max-w-screen-xl mx-auto">
-      {/* 날짜만 타이틀로 표시 */}
-      <div className="text-center mb-6">
-        <h1 className="text-xl font-bold text-blue-700">📅 {todayStr}</h1>
-      </div>
-
-      {/* 뉴스 섹션 */}
       {categoryPairs.map((pair, i) => (
         <div key={i} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           {pair.map(([category, data]) => {
@@ -70,6 +55,8 @@ export default function NewsByCategory() {
             return (
               <div key={category}>
                 <h2 className="text-lg font-bold text-blue-600 mb-2">{category}</h2>
+
+                {/* 대표 뉴스 5개 */}
                 <div className="space-y-3">
                   {data.top5.map((item, idx) => (
                     <div key={idx} className="border p-3 rounded shadow bg-white">
@@ -86,6 +73,7 @@ export default function NewsByCategory() {
                   ))}
                 </div>
 
+                {/* 아카이브 */}
                 {hasMore && (
                   <div className="mt-3">
                     <button
