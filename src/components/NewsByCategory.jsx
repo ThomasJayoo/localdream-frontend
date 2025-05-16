@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 const allowedCategories = ["복지", "축제", "관광홍보", "건설행정", "인구대책", "커뮤니티뉴스"];
 
-// 🔧 최신순으로 정렬하고 5개 + 나머지 구분
 function processCategoryNews(items) {
   const sorted = [...items].sort((a, b) => new Date(b.date) - new Date(a.date));
   return {
@@ -36,7 +35,6 @@ export default function NewsByCategory() {
     }));
   };
 
-  // 카테고리를 2개씩 묶어 2열 레이아웃 구성
   const categoryPairs = Object.entries(newsData).reduce((acc, cur, idx) => {
     const row = Math.floor(idx / 2);
     if (!acc[row]) acc[row] = [];
@@ -55,8 +53,6 @@ export default function NewsByCategory() {
             return (
               <div key={category}>
                 <h2 className="text-lg font-bold text-blue-600 mb-2">{category}</h2>
-
-                {/* 대표 뉴스 5개 */}
                 <div className="space-y-3">
                   {data.top5.map((item, idx) => (
                     <div key={idx} className="border p-3 rounded shadow bg-white">
@@ -73,7 +69,6 @@ export default function NewsByCategory() {
                   ))}
                 </div>
 
-                {/* 아카이브 */}
                 {hasMore && (
                   <div className="mt-3">
                     <button

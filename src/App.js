@@ -16,17 +16,12 @@ export default function App() {
 
   return (
     <div className="p-4 max-w-screen-xl mx-auto">
-      {/* 📅 날짜 + 로컬드림 제목 */}
       <header className="text-center mb-6">
         <h1 className="text-xl font-bold text-blue-800">{todayStr}</h1>
       </header>
-
-      {/* 🎥 유튜브 2열 섹션 */}
       <section className="mb-8">
         <YoutubeSection />
       </section>
-
-      {/* 📰 뉴스 카테고리별 2열 구성 */}
       <main>
         <NewsByCategory />
       </main>
