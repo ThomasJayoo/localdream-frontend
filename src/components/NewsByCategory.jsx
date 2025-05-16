@@ -1,15 +1,13 @@
+// (생략)
 {Object.entries(newsData).map(([category, items]) => {
-  // 지역별로 다시 묶기
   const groupedByLocal = items.reduce((acc, cur) => {
     acc[cur.local] = acc[cur.local] || [];
     acc[cur.local].push(cur);
     return acc;
   }, {});
-
   return (
     <div key={category} className="mb-8">
       <h2 className="text-xl font-bold text-blue-700 mb-4">{category}</h2>
-
       {Object.entries(groupedByLocal).map(([local, localItems]) => (
         <div key={local} className="mb-4">
           <h3 className="text-lg font-semibold text-gray-800">{local}</h3>
