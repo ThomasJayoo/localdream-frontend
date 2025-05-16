@@ -25,3 +25,5 @@
     </div>
   );
 })}
+
+export default NewsByCategory;
