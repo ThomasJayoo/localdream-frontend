@@ -1,6 +1,6 @@
 import React from "react";
 import YoutubeSection from "./components/YoutubeSection";
-import NewsByCategory from "./NewsByCategory";
+import NewsByCategory from "./components/NewsByCategory";
 function App() {
   return (
     <div className="bg-gray-100 min-h-screen">
