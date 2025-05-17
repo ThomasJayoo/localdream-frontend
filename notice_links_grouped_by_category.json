@@ -1,0 +1,24 @@
+{
+  "복지": [
+    {
+      "local": "서울특별시 종로구",
+      "title": "종로구 복지센터 개소",
+      "url": "https://example.com/news1",
+      "date": "2025-05-16T09:00:00"
+    },
+    {
+      "local": "전라남도 진도군",
+      "title": "진도군 복지관 리모델링",
+      "url": "https://example.com/news2",
+      "date": "2025-05-15T14:30:00"
+    }
+  ],
+  "축제": [
+    {
+      "local": "부산광역시 해운대구",
+      "title": "해운대 여름 바다 축제 개막",
+      "url": "https://example.com/news3",
+      "date": "2025-05-16T10:00:00"
+    }
+  ]
+}
