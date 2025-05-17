@@ -1,8 +1,32 @@
 {
   "서울특별시 강남구": [
-    "https://www.gangnam.go.kr/"
+    "https://www.gangnam.go.kr/board/bbs.do?bbsId=BBS_0000001"
   ],
   "전라남도 진도군": [
-    "https://jindo.go.kr/"
+    "https://jindo.go.kr/board/boardRead.do?boardId=notice"
+  ],
+  "부산광역시 해운대구": [
+    "https://www.haeundae.go.kr/board/list.do?boardId=BBS_0000002"
+  ],
+  "경기도 수원시": [
+    "https://www.suwon.go.kr/board/noticeList.do"
+  ],
+  "강원도 강릉시": [
+    "https://www.gn.go.kr/www/selectBbsNttList.do?key=123"
+  ],
+  "전라북도 전주시": [
+    "https://www.jeonju.go.kr/planweb/board/view.9is?boardUid=1"
+  ],
+  "충청남도 천안시": [
+    "https://www.cheonan.go.kr/board/?mn=1020"
+  ],
+  "경상북도 포항시": [
+    "https://www.pohang.go.kr/www/board/list.do?boardId=bbs_0000001"
+  ],
+  "제주특별자치도 제주시": [
+    "https://www.jeju.go.kr/news/notice.htm"
+  ],
+  "세종특별자치시": [
+    "https://www.sejong.go.kr/bbs/B0000001/list.do?menuNo=200000"
   ]
 }
