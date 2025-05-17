@@ -18,7 +18,7 @@ def extract_notice_links_with_date(page_source, base_url):
         if "공지" in text or "알림" in text or "소식" in text or "보도" in text or "news" in href.lower():
             full_url = href if href.startswith("http") else base_url.rstrip("/") + "/" + href.lstrip("/")
 
-            # 작성일 추출 시도
+            # 작성일 추출
             parent = link.find_parent(["tr", "li", "div"])
             date_text = ""
             if parent:
@@ -29,7 +29,7 @@ def extract_notice_links_with_date(page_source, base_url):
                         date_text = s
                         break
 
-            # 날짜 포맷 정제
+            # 날짜 정제
             date_iso = None
             for sep in [".", "-", "/"]:
                 try:
