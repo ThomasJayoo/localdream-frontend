@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <div className="p-4 max-w-screen-xl mx-auto">
-      {/* 헤더: 날짜 왼쪽, 제목 가운데 */}
+      {/* 상단 날짜 + 제목 */}
       <div className="flex justify-between items-center mb-6 relative">
         <div className="text-blue-800 font-bold text-lg absolute left-0">{todayStr}</div>
         <div className="w-full text-center">
@@ -24,15 +24,14 @@ export default function App() {
         </div>
       </div>
 
-      {/* 본문 2단 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <YoutubeSection />
-        </div>
-        <div>
-          <NewsByCategory />
-        </div>
+      {/* 유튜브 2개 나란히 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <YoutubeSection index={0} />
+        <YoutubeSection index={1} />
       </div>
+
+      {/* 뉴스 아래 2단 그리드 (내부 NewsByCategory.jsx에서 처리) */}
+      <NewsByCategory />
     </div>
   );
 }
