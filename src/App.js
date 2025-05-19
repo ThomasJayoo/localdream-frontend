@@ -25,10 +25,9 @@ export default function App() {
       </div>
 
       {/* 유튜브 2개 나란히 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-        <YoutubeSection index={0} />
-        <YoutubeSection index={1} />
-      </div>
+      <div className="mb-10">
+        <YoutubeSection />
+       </div>
 
       {/* 뉴스 아래 2단 그리드 (내부 NewsByCategory.jsx에서 처리) */}
       <NewsByCategory />
