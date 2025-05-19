@@ -7,17 +7,23 @@ function extractCategory(text) {
   return match ? match[1] : null;
 }
 
+function extractPostDate(text) {
+  const match = text.match(/\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/);
+  return match ? match[0] : null;
+}
+
 function processNewsByCategory(flattenedNews) {
   const categoryMap = {};
 
   for (const item of flattenedNews) {
     const category = extractCategory(item.text);
-    if (!allowedCategories.includes(category)) continue;
+    const date = extractPostDate(item.text);
+    if (!allowedCategories.includes(category) || !date) continue;
 
     const cleanedItem = {
       title: item.text.replace(/\[[^\]]+\]/, "").trim(),
       url: item.url,
-      date: item.date,
+      date,
       local: item.local
     };
 
@@ -71,7 +77,7 @@ export default function NewsByCategory() {
       {[...visibleCategories, ...(showArchive ? archivedCategories : [])].map(([category, data]) => (
         <div key={category} className="mb-8">
           <h2 className="text-xl font-bold text-indigo-700 mb-3">📂 {category}</h2>
-          <div className="space-y-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {data.top5.map((item, idx) => (
               <div key={idx} className="border p-3 rounded shadow bg-white">
                 <a
@@ -102,3 +108,4 @@ export default function NewsByCategory() {
     </div>
   );
 }
+
