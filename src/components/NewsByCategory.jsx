@@ -13,11 +13,6 @@ function extractPostDate(text) {
   return match ? match[0] : null;
 }
 
-function extractSummary(text) {
-  const cleaned = text.replace(/\[.*?\]/g, "").replace(/\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/, "").trim();
-  return cleaned.length > 100 ? cleaned.slice(0, 97) + "..." : cleaned;
-}
-
 function processNewsByCategory(flattenedNews) {
   const categoryMap = {};
 
@@ -28,7 +23,6 @@ function processNewsByCategory(flattenedNews) {
 
     const cleanedItem = {
       title: item.text.replace(/\[.*?\]/g, "").trim(),
-      summary: extractSummary(item.text),
       url: item.url,
       date,
       local: item.local
@@ -77,12 +71,17 @@ export default function NewsByCategory() {
           <h2 className="text-xl font-bold text-indigo-700 mb-4">📂 {category}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {items.map((item, idx) => (
-              <div key={idx} className="border p-4 rounded bg-white shadow">
-                <div className="text-sm text-gray-600 mb-1">🏛 {item.local}</div>
-                <a href={item.url} target="_blank" rel="noreferrer" className="font-semibold text-blue-700 hover:underline">
+              <div key={idx} className="border p-4 rounded bg-white shadow space-y-1">
+                <div className="text-sm text-gray-600">🏛 {item.local}</div>
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block font-semibold text-blue-700 hover:underline"
+                >
                   📌 {item.title}
                 </a>
-                <div className="text-sm text-gray-700 mt-1">{item.summary}</div>
+                <div className="text-xs text-gray-500">🗓 {item.date}</div>
               </div>
             ))}
           </div>
