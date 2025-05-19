@@ -65,23 +65,23 @@ export default function NewsByCategory() {
   }, []);
 
   return (
-    <div className="p-4">
+    <div className="p-4 space-y-10">
       {Object.entries(newsData).map(([category, items]) => (
-        <div key={category} className="mb-10">
+        <div key={category}>
           <h2 className="text-xl font-bold text-indigo-700 mb-4">📂 {category}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-2">
             {items.map((item, idx) => (
-              <div key={idx} className="border p-4 rounded bg-white shadow space-y-1">
-                <div className="text-sm text-gray-600">🏛 {item.local}</div>
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="block font-semibold text-blue-700 hover:underline"
-                >
-                  📌 {item.title}
-                </a>
-                <div className="text-xs text-gray-500">🗓 {item.date}</div>
+              <div
+                key={idx}
+                className="flex flex-col md:flex-row md:items-center justify-between border-b pb-2"
+              >
+                <div className="text-sm text-gray-600 md:w-1/4">🏛 {item.local}</div>
+                <div className="text-sm font-medium text-blue-700 md:w-2/4">
+                  <a href={item.url} target="_blank" rel="noreferrer" className="hover:underline">
+                    📌 {item.title}
+                  </a>
+                </div>
+                <div className="text-xs text-gray-500 text-right md:w-1/4">🗓 {item.date}</div>
               </div>
             ))}
           </div>
