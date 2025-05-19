@@ -71,4 +71,34 @@ export default function NewsByCategory() {
       {[...visibleCategories, ...(showArchive ? archivedCategories : [])].map(([category, data]) => (
         <div key={category} className="mb-8">
           <h2 className="text-xl font-bold text-indigo-700 mb-3">📂 {category}</h2>
-          <div className
+          <div className="space-y-3">
+            {data.top5.map((item, idx) => (
+              <div key={idx} className="border p-3 rounded shadow bg-white">
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-700 font-medium hover:underline"
+                >
+                  📌 [{item.local}] {item.title}
+                </a>
+                <div className="text-sm text-gray-500">📅 {item.date}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      {archivedCategories.length > 0 && (
+        <div className="text-center">
+          <button
+            onClick={() => setShowArchive((prev) => !prev)}
+            className="text-sm text-blue-500 hover:underline"
+          >
+            {showArchive ? "▲ 카테고리 접기" : "▼ 더보기 카테고리 보기"}
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
