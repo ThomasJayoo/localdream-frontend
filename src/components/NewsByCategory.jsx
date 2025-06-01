@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 
 function extractCategory(text) {
@@ -40,8 +39,27 @@ function processNewsByCategory(flattenedNews) {
   return categoryMap;
 }
 
-export default function NewsByCategory({ newsData }) {
-  if (!newsData || typeof newsData !== "object") {
+export default function NewsByCategory() {
+  const [newsData, setNewsData] = useState(null);
+
+  useEffect(() => {
+    fetch("/data/news.json")
+      .then(res => res.json())
+      .then(data => {
+        const allNews = [];
+        for (const [region, items] of Object.entries(data)) {
+          for (const item of items) {
+            if (!item.text || item.error) continue;
+            allNews.push({ ...item, local: region });
+          }
+        }
+        const byCategory = processNewsByCategory(allNews);
+        setNewsData(byCategory);
+      })
+      .catch(err => console.error("❌ 뉴스 데이터를 불러오는 데 실패했습니다:", err));
+  }, []);
+
+  if (!newsData) {
     return <p className="text-center text-gray-500">뉴스 데이터를 불러오는 중입니다...</p>;
   }
 
