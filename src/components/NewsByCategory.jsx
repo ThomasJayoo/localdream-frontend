@@ -41,26 +41,16 @@ function processNewsByCategory(flattenedNews) {
 }
 
 export default function NewsByCategory({ newsData }) {
-  const [newsData, setNewsData] = useState({});
+  const allNews = [];
 
-  useEffect(() => {
-    fetch("/news.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const allNews = [];
-
-        for (const [region, items] of Object.entries(data)) {
-          for (const item of items) {
+  for (const [region, items] of Object.entries(data)) {
+  for (const item of items) {
             if (!item.text || item.error) continue;
             allNews.push({ ...item, local: region });
           }
         }
 
-        const byCategory = processNewsByCategory(allNews);
-        setNewsData(byCategory);
-      })
-      .catch((err) => console.error("불러오기 실패:", err));
-  }, []);
+  const categoryMap = processNewsByCategory(allNews);
 
   const categoryPairs = Object.entries(newsData).reduce((acc, [cat, list], idx) => {
     const row = Math.floor(idx / 2);
