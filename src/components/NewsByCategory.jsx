@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function extractCategory(text) {
   const match = text.match(/\[([^\]]+)\]/);
@@ -41,6 +41,10 @@ function processNewsByCategory(flattenedNews) {
 }
 
 export default function NewsByCategory({ newsData }) {
+  if (!newsData || typeof newsData !== "object") {
+    return <p className="text-center text-gray-500">뉴스 데이터를 불러오는 중입니다...</p>;
+  }
+
   const allNews = [];
 
   for (const [region, items] of Object.entries(newsData)) {
@@ -50,7 +54,7 @@ export default function NewsByCategory({ newsData }) {
     }
   }
 
-  const categoryMap = processNewsByCategory(newsData);  // ✅ 수정됨
+  const categoryMap = processNewsByCategory(allNews);
 
   const categoryPairs = Object.entries(categoryMap).reduce((acc, [cat, list], idx) => {
     const row = Math.floor(idx / 2);
