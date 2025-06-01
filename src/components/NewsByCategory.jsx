@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 function extractCategory(text) {
   const match = text.match(/\[([^\]]+)\]/);
@@ -12,7 +12,7 @@ function extractPostDate(text) {
 }
 
 function processNewsByCategory(flattenedNews) {
-  const categoryMap = processBewsByCategory(newsData);
+  const categoryMap = {};
 
   for (const item of flattenedNews) {
     const category = extractCategory(item.text);
@@ -44,15 +44,15 @@ export default function NewsByCategory({ newsData }) {
   const allNews = [];
 
   for (const [region, items] of Object.entries(newsData)) {
-  for (const item of items) {
-            if (!item.text || item.error) continue;
-            allNews.push({ ...item, local: region });
-          }
-        }
+    for (const item of items) {
+      if (!item.text || item.error) continue;
+      allNews.push({ ...item, local: region });
+    }
+  }
 
-  const categoryMap = processNewsByCategory(allNews);
+  const categoryMap = processNewsByCategory(newsData);  // ✅ 수정됨
 
-  const categoryPairs = Object.entries(newsData).reduce((acc, [cat, list], idx) => {
+  const categoryPairs = Object.entries(categoryMap).reduce((acc, [cat, list], idx) => {
     const row = Math.floor(idx / 2);
     if (!acc[row]) acc[row] = [];
     acc[row].push([cat, list]);
