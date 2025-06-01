@@ -12,7 +12,7 @@ function extractPostDate(text) {
 }
 
 function processNewsByCategory(flattenedNews) {
-  const categoryMap = {};
+  const categoryMap = processBewsByCategory(newsData);
 
   for (const item of flattenedNews) {
     const category = extractCategory(item.text);
