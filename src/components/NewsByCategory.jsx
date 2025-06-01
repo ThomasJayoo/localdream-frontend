@@ -40,7 +40,7 @@ function processNewsByCategory(flattenedNews) {
   return categoryMap;
 }
 
-export default function NewsByCategory() {
+export default function NewsByCategory({ newsData }) {
   const [newsData, setNewsData] = useState({});
 
   useEffect(() => {

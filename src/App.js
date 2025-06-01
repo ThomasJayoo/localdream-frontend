@@ -13,6 +13,16 @@ function formatKoreanDate(dateObj) {
 
 export default function App() {
   const todayStr = formatKoreanDate(new Date());
+  const [newsData, setNewsData] = useState({});
+
+  // ✅ news.json 불러오기
+  useEffect(() => {
+    fetch("/data/news.json")
+      .then((res) => res.json())
+      .then((data) => setNewsData(data))
+      .catch((err) => console.error("뉴스 로딩 실패:", err));
+  }, []);
+
 
   return (
     <div className="p-4 max-w-screen-xl mx-auto">
