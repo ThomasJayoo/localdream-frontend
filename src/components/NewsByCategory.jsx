@@ -1,43 +1,5 @@
+
 import React, { useEffect, useState } from "react";
-
-function extractCategory(text) {
-  const match = text.match(/\[([^\]]+)\]/);
-  return match ? match[1] : null;
-}
-
-function extractPostDate(text) {
-  const match = text.match(/\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/);
-  return match ? match[0] : null;
-}
-
-function processNewsByCategory(flattenedNews) {
-  const categoryMap = {};
-
-  for (const item of flattenedNews) {
-    const category = extractCategory(item.text);
-    const date = extractPostDate(item.text);
-    if (!category || !date) continue;
-
-    const cleanedItem = {
-      title: item.text.replace(/\[.*?\]/g, "").trim(),
-      url: item.url,
-      date,
-      local: item.local
-    };
-
-    if (!categoryMap[category]) {
-      categoryMap[category] = [];
-    }
-    categoryMap[category].push(cleanedItem);
-  }
-
-  for (const category in categoryMap) {
-    categoryMap[category].sort((a, b) => new Date(b.date) - new Date(a.date));
-    categoryMap[category] = categoryMap[category].slice(0, 5);
-  }
-
-  return categoryMap;
-}
 
 export default function NewsByCategory() {
   const [newsData, setNewsData] = useState(null);
@@ -46,15 +8,13 @@ export default function NewsByCategory() {
     fetch("/data/news.json")
       .then(res => res.json())
       .then(data => {
-        const allNews = [];
-        for (const [region, items] of Object.entries(data)) {
-          for (const item of items) {
-            if (!item.text || item.error) continue;
-            allNews.push({ ...item, local: region });
-          }
+        // 카테고리별 정렬: 최신 5개만 날짜 기준으로 유지
+        const sortedData = {};
+        for (const [category, items] of Object.entries(data)) {
+          const sorted = [...items].sort((a, b) => new Date(b.date) - new Date(a.date));
+          sortedData[category] = sorted.slice(0, 5);
         }
-        const byCategory = processNewsByCategory(allNews);
-        setNewsData(byCategory);
+        setNewsData(sortedData);
       })
       .catch(err => console.error("❌ 뉴스 데이터를 불러오는 데 실패했습니다:", err));
   }, []);
@@ -96,7 +56,13 @@ export default function NewsByCategory() {
                         {item.title}
                       </a>
                     </div>
-                    <div className="text-xs text-gray-500 text-right md:w-1/4">{item.date}</div>
+                    <div className="text-xs text-gray-500 text-right md:w-1/4">
+                      {new Date(item.date).toLocaleDateString("ko-KR", {
+                        year: "numeric",
+                        month: "2-digit",
+                        day: "2-digit"
+                      })}
+                    </div>
                   </div>
                 ))}
               </div>
