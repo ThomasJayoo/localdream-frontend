@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import YoutubeSection from "./components/YoutubeSection";
 import NewsByCategory from "./components/NewsByCategory";
 
