@@ -43,7 +43,7 @@ function processNewsByCategory(flattenedNews) {
 export default function NewsByCategory({ newsData }) {
   const allNews = [];
 
-  for (const [region, items] of Object.entries(data)) {
+  for (const [region, items] of Object.entries(newsData)) {
   for (const item of items) {
             if (!item.text || item.error) continue;
             allNews.push({ ...item, local: region });
