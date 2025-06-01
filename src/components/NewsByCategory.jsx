@@ -45,23 +45,19 @@ export default function NewsByCategory({ newsData }) {
     return <p className="text-center text-gray-500">뉴스 데이터를 불러오는 중입니다...</p>;
   }
 
-  const allNews = [];
+  const categoryList = ["복지", "축제", "관광홍보", "건설행정", "커뮤니티뉴스", "인구대책"];
+  const categoryPairs = [];
 
-  for (const [region, items] of Object.entries(newsData)) {
-    for (const item of items) {
-      if (!item.text || item.error) continue;
-      allNews.push({ ...item, local: region });
+  for (let i = 0; i < categoryList.length; i += 2) {
+    const row = [];
+    for (let j = 0; j < 2; j++) {
+      const category = categoryList[i + j];
+      if (!category) continue;
+      const items = newsData[category] || [];
+      row.push([category, items]);
     }
+    categoryPairs.push(row);
   }
-
-  const categoryMap = processNewsByCategory(allNews);
-
-  const categoryPairs = Object.entries(categoryMap).reduce((acc, [cat, list], idx) => {
-    const row = Math.floor(idx / 2);
-    if (!acc[row]) acc[row] = [];
-    acc[row].push([cat, list]);
-    return acc;
-  }, []);
 
   return (
     <div className="p-4 space-y-10">
