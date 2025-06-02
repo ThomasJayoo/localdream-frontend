@@ -3,4 +3,12 @@ build/
 .vercel/
 .env
 .vercel
-news.json 
+backend/key.env
+public/data/news.json 
+chromedriver.exe
+__pycache__/
+*.log
+fail_log.txt
+
+public/data/news_raw_all.json
+

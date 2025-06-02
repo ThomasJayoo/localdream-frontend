@@ -40,7 +40,7 @@ export default function App() {
        </div>
 
       {/* 뉴스 아래 2단 그리드 (내부 NewsByCategory.jsx에서 처리) */}
-      <NewsByCategory />
+      <NewsByCategory newsData={newsData} />
     </div>
   );
 }

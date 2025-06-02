@@ -111,7 +111,7 @@
     "https://www.goyang.go.kr/www/user/bbs/BD_selectBbsList.do?q_bbsCode=1030"
   ],
   "경기도 안산시": [
-    "https://www.ansan.go.kr"
+    "https://www.ansan.go.kr/www/common/bbs/selectPageListBbs.do?bbs_code=B0214"
   ],
   "경기도 파주시": [
     "https://www.paju.go.kr"
@@ -224,8 +224,77 @@
   "전북특별자치도 부안군": [
     "https://www.buan.go.kr"
   ],
+  "전라남도 강진군": [
+    "https://www.gangjin.go.kr"
+  ],
+  "전라남도 해남군": [
+    "https://www.haenam.go.kr"
+  ],
   "전라남도 광양시": [
     "https://www.gwangyang.go.kr"
+  ],
+ "전라남도 장흥군": [
+    "https://www.jangheung.go.kr"
+  ],
+ "전라남도 화순군": [
+    "https://www.hwasun.go.kr"
+  ],
+ "전라남도 보성군": [
+    "https://www.boseong.go.kr"
+  ],
+ "전라남도 고흥군": [
+    "https://www.goheung.go.kr/index.do"
+  ],
+ "전라남도 구례군": [
+    "https://www.gurye.go.kr/kr/main.do"
+  ],
+ "전라남도 곡성군": [
+    "https://www.gokseong.go.kr"
+  ],
+ "전라남도 담양군": [
+    "https://www.damyang.go.kr"
+  ],
+ "전라남도 나주시": [
+    "https://www.naju.go.kr"
+  ],
+ "전라남도 순천시": [
+    "https://www.suncheon.go.kr"
+  ],
+ "전라남도 여수시": [
+    "https://www.yeosu.go.kr"
+  ],
+ "전라남도 목포시": [
+    "https://www.mokpo.go.kr"
+  ],
+ "전라남도": [
+    "https://www.jeonnam.go.kr"
+  ],
+ "전라남도 영암군": [
+    "https://www.yeongam.go.kr"
+  ],
+ "전라남도 무안군": [
+    "	https://www.muan.go.kr"
+  ],
+ "전라남도 함평군": [
+    "https://www.hampyeong.go.kr"
+  ],
+ "전라남도 영광군": [
+    "https://www.yeonggwang.go.kr"
+  ],
+ "전라남도 장성군": [
+    "https://www.jangseong.go.kr"
+  ],
+ "전라남도 목포시": [
+    "https://www.mokpo.go.kr/www/mokpo_news/notice"
+  ],
+ "전라남도 완도군": [
+    "https://www.wando.go.kr"
+  ],
+ "전라남도 진도군": [
+    "https://www.jindo.go.kr/home/main.cs"
+  ],
+ "전라남도 신안군": [
+    "https://www.shinan.go.kr/home/www/openinfo/participation_07/participation_07_02/page.wscms"
   ],
   "경상북도 경주시": [
     "https://www.gyeongju.go.kr"

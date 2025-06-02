@@ -1,0 +1,1962 @@
+{
+  "서울특별시 서울특별시": {
+    "url": "https://www.seoul.go.kr/realmnews/in/list.do#none",
+    "base_url": "https://www.seoul.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "서울특별시 종로구": {
+    "url": "https://www.jongno.go.kr/portal/bbs/selectBoardList.do?bbsId=BBSMSTR_000000000201&menuId=1753&menuNo=1753",
+    "base_url": "https://www.jongno.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td.output.date1"
+  },
+  "서울특별시 중구": {
+    "url": "https://www.junggu.seoul.kr/content.do?cmsid=14231",
+    "base_url": "https://www.junggu.seoul.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td.mo_none"
+  },
+  "서울특별시 용산구": {
+    "url": "https://www.yongsan.go.kr/portal/bbs/B0000041/list.do?menuNo=200228",
+    "base_url": "https://www.yongsan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td"
+  },
+  "서울특별시 성동구": {
+    "url": "https://www.sd.go.kr/main/selectBbsNttList.do?bbsNo=183&key=1472&",
+    "base_url": "https://www.sd.go.kr",
+    "item_selector": "li.depth_item.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "time"
+  },
+  "서울특별시 광진구": {
+    "url": "https://www.gwangjin.go.kr/portal/bbs/B0000001/list.do?menuNo=200190",
+    "base_url": "https://www.gwangjin.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "li"
+  },
+  "서울특별시 동대문구": {
+    "url": "https://www.ddm.go.kr/www/selectBbsNttList.do?bbsNo=38&key=198",
+    "base_url": "https://www.ddm.go.kr",
+    "item_selector": "li.depth_item.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "a.depth_text.depth4_text"
+  },
+  "서울특별시 중랑구": {
+    "url": "https://www.jungnang.go.kr/portal/bbs/list/B0000002.do?menuNo=200473",
+    "base_url": "https://www.jungnang.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "서울특별시 성북구": {
+    "url": "https://www.sb.go.kr/www/selectBbsNttList.do?bbsNo=41&key=6350",
+    "base_url": "https://www.sb.go.kr",
+    "item_selector": "li.depth_item.depth3_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td"
+  },
+  "서울특별시 강북구": {
+    "url": "https://www.gangbuk.go.kr/portal/bbs/B0000145/list.do?menuNo=200081",
+    "base_url": "https://www.gangbuk.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "서울특별시 도봉구": {
+    "url": "https://www.dobong.go.kr/bbs.asp?code=10008769",
+    "base_url": "https://www.dobong.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td"
+  },
+  "서울특별시 노원구": {
+    "url": "https://www.nowon.kr/www/user/bbs/BD_selectBbsList.do?q_bbsCode=1001&q_estnColumn1=11",
+    "base_url": "https://www.nowon.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td.cell-date"
+  },
+  "서울특별시 은평구": {
+    "url": "https://www.ep.go.kr/www/selectBbsNttList.do?bbsNo=42&key=744",
+    "base_url": "https://www.ep.go.kr",
+    "item_selector": "li.depth_item.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td"
+  },
+  "서울특별시 서대문구": {
+    "url": "https://www.sdm.go.kr",
+    "base_url": "https://www.sdm.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span"
+  },
+  "서울특별시 마포구": {
+    "url": "https://www.mapo.go.kr",
+    "base_url": "https://www.mapo.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "서울특별시 양천구": {
+    "url": "https://www.yangcheon.go.kr",
+    "base_url": "https://www.yangcheon.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "서울특별시 강서구": {
+    "url": "https://www.gangseo.seoul.kr",
+    "base_url": "https://www.gangseo.seoul.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "서울특별시 구로구": {
+    "url": "https://www.guro.go.kr",
+    "base_url": "https://www.guro.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "서울특별시 금천구": {
+    "url": "https://www.geumcheon.go.kr/portal/index.do",
+    "base_url": "httpss://www.geumcheon.go.kr",
+    "item_selector": "li.depth_item.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "서울특별시 영등포구": {
+    "url": "https://www.ydp.go.kr",
+    "base_url": "https://www.ydp.go.kr",
+    "item_selector": "li.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "서울특별시 동작구": {
+    "url": "https://www.dongjak.go.kr",
+    "base_url": "https://www.dongjak.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "dt"
+  },
+  "서울특별시 관악구": {
+    "url": "https://www.gwanak.go.kr",
+    "base_url": "https://www.gwanak.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "서울특별시 서초구": {
+    "url": "https://www.seocho.go.kr",
+    "base_url": "https://www.seocho.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "서울특별시 강남구": {
+    "url": "https://www.gangnam.go.kr",
+    "base_url": "https://www.gangnam.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "서울특별시 송파구": {
+    "url": "https://www.songpa.go.kr",
+    "base_url": "https://www.songpa.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "서울특별시 강동구": {
+    "url": "https://www.gangdong.go.kr",
+    "base_url": "https://www.gangdong.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "부산광역시 부산광역시": {
+    "url": "https://www.busan.go.kr",
+    "base_url": "https://www.busan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "부산광역시 중구": {
+    "url": "https://www.bsjunggu.go.kr",
+    "base_url": "https://www.bsjunggu.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span"
+  },
+  "부산광역시 서구": {
+    "url": "https://www.bsseogu.go.kr/index.bsseogu",
+    "base_url": "httpss://www.bsseogu.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "부산광역시 동구": {
+    "url": "https://www.bsdonggu.go.kr",
+    "base_url": "https://www.bsdonggu.go.kr",
+    "item_selector": "li.depth3_list",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span"
+  },
+  "부산광역시 영도구": {
+    "url": "https://www.yeongdo.go.kr",
+    "base_url": "https://www.yeongdo.go.kr",
+    "item_selector": "div.item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "부산광역시 부산진구": {
+    "url": "https://www.busanjin.go.kr",
+    "base_url": "https://www.busanjin.go.kr",
+    "item_selector": "div.listcon-wrap",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "부산광역시 동래구": {
+    "url": "https://www.dongnae.go.kr",
+    "base_url": "https://www.dongnae.go.kr",
+    "item_selector": "div.corona_intro",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "부산광역시 남구": {
+    "url": "https://www.bsnamgu.go.kr",
+    "base_url": "https://www.bsnamgu.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "부산광역시 북구": {
+    "url": "https://www.bsbukgu.go.kr/board/list.bsbukgu?boardId=BBS_0000023&menuCd=DOM_000000105001001000&contentsSid=368&cpath=",
+    "base_url": "https://www.bsbukgu.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "부산광역시 해운대구": {
+    "url": "https://www.haeundae.go.kr/board/list.do?boardId=BBS_0000038&menuCd=DOM_000000104001001000&contentsSid=100",
+    "base_url": "https://www.haeundae.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td.ellipsis"
+  },
+  "부산광역시 사하구": {
+    "url": "https://www.saha.go.kr/portal/bbs/list.do?ptIdx=22&mId=0301010000",
+    "base_url": "https://www.saha.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td.date"
+  },
+  "부산광역시 금정구": {
+    "url": "https://www.geumjeong.go.kr",
+    "base_url": "https://www.geumjeong.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span"
+  },
+  "부산광역시 강서구": {
+    "url": "https://www.bsgangseo.go.kr",
+    "base_url": "https://www.bsgangseo.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "부산광역시 연제구": {
+    "url": "https://www.yeonje.go.kr",
+    "base_url": "https://www.yeonje.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "부산광역시 수영구": {
+    "url": "https://www.suyeong.go.kr",
+    "base_url": "https://www.suyeong.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span"
+  },
+  "부산광역시 사상구": {
+    "url": "https://www.sasang.go.kr",
+    "base_url": "https://www.sasang.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "부산광역시 기장군": {
+    "url": "https://www.gijang.go.kr/index.gijang",
+    "base_url": "httpss://www.gijang.go.kr",
+    "item_selector": "div",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "대구광역시 대구광역시": {
+    "url": "https://info.daegu.go.kr/newshome/mtnmain.php?mtnkey=scatelist&mkey=1",
+    "base_url": "https://info.daegu.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "p.date"
+  },
+  "대구광역시 중구": {
+    "url": "https://www.jung.daegu.kr/new/pages/administration/page.html?mc=0157",
+    "base_url": "https://www.jung.daegu.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "대구광역시 동구": {
+    "url": "https://www.dong.daegu.kr",
+    "base_url": "https://www.dong.daegu.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.stxt"
+  },
+  "대구광역시 서구": {
+    "url": "https://www.dgs.go.kr",
+    "base_url": "https://www.dgs.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "대구광역시 남구": {
+    "url": "https://nam.daegu.kr",
+    "base_url": "https://nam.daegu.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "대구광역시 북구": {
+    "url": "https://www.buk.daegu.kr/",
+    "base_url": "httpss://www.buk.daegu.kr",
+    "item_selector": "div",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "대구광역시 수성구": {
+    "url": "https://www.suseong.kr",
+    "base_url": "https://www.suseong.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "대구광역시 달서구": {
+    "url": "https://www.dalseo.daegu.kr/",
+    "base_url": "httpss://www.dalseo.daegu.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "대구광역시 달성군": {
+    "url": "https://www.dalseong.daegu.kr",
+    "base_url": "https://www.dalseong.daegu.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "대구광역시 군위군": {
+    "url": "https://www.gunwi.go.kr/ko/index.do",
+    "base_url": "httpss://www.gunwi.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "p.txt"
+  },
+  "인천광역시 인천광역시": {
+    "url": "https://www.incheon.go.kr/index",
+    "base_url": "httpss://www.incheon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "div.hidden"
+  },
+  "인천광역시 중구": {
+    "url": "https://www.icjg.go.kr",
+    "base_url": "https://www.icjg.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "p.date"
+  },
+  "인천광역시 동구": {
+    "url": "https://www.icdonggu.go.kr",
+    "base_url": "https://www.icdonggu.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "인천광역시 미추홀구": {
+    "url": "https://www.michuhol.go.kr",
+    "base_url": "httpss://www.michuhol.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "인천광역시 연수구": {
+    "url": "https://www.yeonsu.go.kr",
+    "base_url": "https://www.yeonsu.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "p.date"
+  },
+  "인천광역시 남동구": {
+    "url": "https://www.namdong.go.kr",
+    "base_url": "https://www.namdong.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "인천광역시 부평구": {
+    "url": "https://www.icbp.go.kr",
+    "base_url": "https://www.icbp.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "인천광역시 계양구": {
+    "url": "https://www.gyeyang.go.kr",
+    "base_url": "https://www.gyeyang.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "인천광역시 서구": {
+    "url": "https://seo.incheon.kr",
+    "base_url": "https://seo.incheon.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "인천광역시 강화군": {
+    "url": "https://www.ganghwa.go.kr",
+    "base_url": "https://www.ganghwa.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "인천광역시 옹진군": {
+    "url": "https://www.ongjin.go.kr",
+    "base_url": "https://www.ongjin.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "광주광역시 광주광역시": {
+    "url": "https://www.gwangju.go.kr",
+    "base_url": "httpss://www.gwangju.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "광주광역시 동구": {
+    "url": "https://www.donggu.kr/",
+    "base_url": "https://www.donggu.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "광주광역시 서구": {
+    "url": "https://seogu.gwangju.kr",
+    "base_url": "https://seogu.gwangju.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "광주광역시 남구": {
+    "url": "https://www.namgu.gwangju.kr/index.es?sid=a1",
+    "base_url": "httpss://www.namgu.gwangju.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "광주광역시 북구": {
+    "url": "https://bukgu.gwangju.kr/index.es?sid=a1",
+    "base_url": "httpss://bukgu.gwangju.kr",
+    "item_selector": "li.lnb-detail-item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "광주광역시 광산구": {
+    "url": "https://www.gwangsan.go.kr",
+    "base_url": "https://www.gwangsan.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "대전광역시 대전광역시": {
+    "url": "https://www.daejeon.go.kr",
+    "base_url": "https://www.daejeon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "a"
+  },
+  "대전광역시 동구": {
+    "url": "https://www.donggu.go.kr",
+    "base_url": "https://www.donggu.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "대전광역시 중구": {
+    "url": "https://www.djjunggu.go.kr",
+    "base_url": "https://www.djjunggu.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "대전광역시 서구": {
+    "url": "https://www.seogu.go.kr/bbs/BBSMSTR_000000000275/list.do",
+    "base_url": "https://www.seogu.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td.regDate"
+  },
+  "대전광역시 유성구": {
+    "url": "https://www.yuseong.go.kr",
+    "base_url": "https://www.yuseong.go.kr",
+    "item_selector": "div.btnbox",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "대전광역시 대덕구": {
+    "url": "https://www.daedeok.go.kr",
+    "base_url": "https://www.daedeok.go.kr",
+    "item_selector": "li.depth_item.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "울산광역시 울산광역시": {
+    "url": "https://www.ulsan.go.kr",
+    "base_url": "https://www.ulsan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "울산광역시 중구": {
+    "url": "https://www.junggu.ulsan.kr",
+    "base_url": "https://www.junggu.ulsan.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.time"
+  },
+  "울산광역시 남구": {
+    "url": "https://www.ulsannamgu.go.kr/cmm/main/mainPage.do",
+    "base_url": "httpss://www.ulsannamgu.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "h4"
+  },
+  "울산광역시 동구": {
+    "url": "https://www.donggu.ulsan.kr",
+    "base_url": "https://www.donggu.ulsan.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "울산광역시 북구": {
+    "url": "https://www.bukgu.ulsan.kr/lay1/bbs/S1T62C83/A/1/list.do",
+    "base_url": "https://www.bukgu.ulsan.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "div.hwp_editor_board_content"
+  },
+  "울산광역시 울주군": {
+    "url": "https://www.ulju.ulsan.kr",
+    "base_url": "https://www.ulju.ulsan.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.bbstitle"
+  },
+  "세종특별자치시 세종특별자치시": {
+    "url": "https://www.sejong.go.kr",
+    "base_url": "https://www.sejong.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경기도 경기도": {
+    "url": "https://www.gg.go.kr",
+    "base_url": "https://www.gg.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경기도 수원시": {
+    "url": "https://www.suwon.go.kr",
+    "base_url": "https://www.suwon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경기도 용인시": {
+    "url": "https://www.yongin.go.kr",
+    "base_url": "https://www.yongin.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "경기도 고양시": {
+    "url": "https://www.goyang.go.kr/www/user/bbs/BD_selectBbsList.do?q_bbsCode=1030",
+    "base_url": "https://www.goyang.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td.date"
+  },
+  "경기도 화성시": {
+    "url": "https://www.hscity.go.kr",
+    "base_url": "https://www.hscity.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경기도 성남시": {
+    "url": "https://www.seongnam.go.kr",
+    "base_url": "https://www.seongnam.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "경기도 부천시": {
+    "url": "https://www.bucheon.go.kr",
+    "base_url": "https://www.bucheon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경기도 남양주시": {
+    "url": "https://www.nyj.go.kr",
+    "base_url": "https://www.nyj.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경기도 안산시": {
+    "url": "https://www.ansan.go.kr",
+    "base_url": "https://www.ansan.go.kr",
+    "item_selector": "div",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경기도 평택시": {
+    "url": "https://www.pyeongtaek.go.kr/main.do",
+    "base_url": "httpss://www.pyeongtaek.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "경기도 안양시": {
+    "url": "https://www.anyang.go.kr/main/index.do",
+    "base_url": "httpss://www.anyang.go.kr",
+    "item_selector": "li.depth_item.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span"
+  },
+  "경기도 시흥시": {
+    "url": "https://www.siheung.go.kr",
+    "base_url": "https://www.siheung.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경기도 파주시": {
+    "url": "https://www.paju.go.kr",
+    "base_url": "https://www.paju.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span"
+  },
+  "경기도 김포시": {
+    "url": "https://www.gimpo.go.kr",
+    "base_url": "https://www.gimpo.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경기도 의정부시": {
+    "url": "https://www.ui4u.go.kr/main.do",
+    "base_url": "httpss://www.ui4u.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "경기도 광주시": {
+    "url": "https://www.gjcity.go.kr",
+    "base_url": "https://www.gjcity.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경기도 하남시": {
+    "url": "https://www.hanam.go.kr",
+    "base_url": "https://www.hanam.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경기도 광명시": {
+    "url": "https://www.gm.go.kr/pt/user/bbs/BD_selectBbsList.do?q_bbsCode=2032",
+    "base_url": "https://www.gm.go.kr",
+    "item_selector": "li.depth_item.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "style"
+  },
+  "경기도 군포시": {
+    "url": "https://www.gunpo.go.kr",
+    "base_url": "https://www.gunpo.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경기도 양주시": {
+    "url": "https://www.yangju.go.kr",
+    "base_url": "https://www.yangju.go.kr",
+    "item_selector": "li.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경기도 오산시": {
+    "url": "https://www.osan.go.kr",
+    "base_url": "https://www.osan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "경기도 이천시": {
+    "url": "https://www.icheon.go.kr",
+    "base_url": "https://www.icheon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.desc"
+  },
+  "경기도 안성시": {
+    "url": "https://www.anseong.go.kr",
+    "base_url": "https://www.anseong.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "경기도 구리시": {
+    "url": "https://www.guri.go.kr/www/index.do",
+    "base_url": "httpss://www.guri.go.kr",
+    "item_selector": "li.depth_item.depth3_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.summary"
+  },
+  "경기도 의왕시": {
+    "url": "https://www.uiwang.go.kr",
+    "base_url": "https://www.uiwang.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "div.weather-date"
+  },
+  "경기도 포천시": {
+    "url": "https://www.pocheon.go.kr/www/selectBbsNttList.do?bbsNo=18&key=3095",
+    "base_url": "https://www.pocheon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td"
+  },
+  "경기도 양평군": {
+    "url": "https://www.yp21.go.kr",
+    "base_url": "https://www.yp21.go.kr",
+    "item_selector": "div.box_hashtag",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "div.date"
+  },
+  "경기도 여주시": {
+    "url": "https://www.yeoju.go.kr/www/index.do",
+    "base_url": "httpss://www.yeoju.go.kr",
+    "item_selector": "div",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경기도 동두천시": {
+    "url": "https://www.ddc.go.kr",
+    "base_url": "https://www.ddc.go.kr",
+    "item_selector": "li.depth_item.depth3_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.notice_date"
+  },
+  "경기도 과천시": {
+    "url": "https://www.gccity.go.kr",
+    "base_url": "https://www.gccity.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "i"
+  },
+  "경기도 가평군": {
+    "url": "https://www.gp.go.kr",
+    "base_url": "https://www.gp.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경기도 연천군": {
+    "url": "https://www.yeoncheon.go.kr",
+    "base_url": "https://www.yeoncheon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "강원특별자치도 강원특별자치도": {
+    "url": "https://state.gwd.go.kr/portal",
+    "base_url": "httpss://state.gwd.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "강원특별자치도 춘천시": {
+    "url": "https://www.chuncheon.go.kr/cityhall/",
+    "base_url": "httpss://www.chuncheon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "강원특별자치도 원주시": {
+    "url": "https://www.wonju.go.kr",
+    "base_url": "https://www.wonju.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "강원특별자치도 강릉시": {
+    "url": "https://www.gn.go.kr/www/index.do",
+    "base_url": "httpss://www.gn.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "강원특별자치도 동해시": {
+    "url": "https://dh.go.kr",
+    "base_url": "https://dh.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "강원특별자치도 태백시": {
+    "url": "https://www.taebaek.go.kr/mayor/index.do",
+    "base_url": "httpss://www.taebaek.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "강원특별자치도 속초시": {
+    "url": "https://www.sokcho.go.kr",
+    "base_url": "https://www.sokcho.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "강원특별자치도 삼척시": {
+    "url": "https://www.samcheok.go.kr/main.web",
+    "base_url": "httpss://www.samcheok.go.kr",
+    "item_selector": "div.bg",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "강원특별자치도 홍천군": {
+    "url": "https://www.hongcheon.go.kr/www/index.do",
+    "base_url": "httpss://www.hongcheon.go.kr",
+    "item_selector": "li.depth_item.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "div.date"
+  },
+  "강원특별자치도 횡성군": {
+    "url": "https://www.hsg.go.kr/www/index.do",
+    "base_url": "httpss://www.hsg.go.kr",
+    "item_selector": "li.depth_item.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "li.depth_item.depth4_item"
+  },
+  "강원특별자치도 영월군": {
+    "url": "https://www.yw.go.kr",
+    "base_url": "https://www.yw.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "강원특별자치도 평창군": {
+    "url": "https://www.pc.go.kr/portal",
+    "base_url": "https://www.pc.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span"
+  },
+  "강원특별자치도 정선군": {
+    "url": "https://www.jeongseon.go.kr/portal",
+    "base_url": "httpss://www.jeongseon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "강원특별자치도 철원군": {
+    "url": "https://www.cwg.go.kr/www/index.do",
+    "base_url": "httpss://www.cwg.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "강원특별자치도 화천군": {
+    "url": "https://www.ihc.go.kr/www/index.do",
+    "base_url": "httpss://www.ihc.go.kr",
+    "item_selector": "li.depth3_list",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "강원특별자치도 양구군": {
+    "url": "https://www.yanggu.go.kr/",
+    "base_url": "httpss://www.yanggu.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "강원특별자치도 인제군": {
+    "url": "https://www.inje.go.kr",
+    "base_url": "https://www.inje.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "강원특별자치도 고성군": {
+    "url": "https://www.gwgs.go.kr",
+    "base_url": "https://www.gwgs.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "강원특별자치도 양양군": {
+    "url": "https://www.yangyang.go.kr/gw/portal",
+    "base_url": "httpss://www.yangyang.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span"
+  },
+  "충청북도 충청북도": {
+    "url": "https://www.chungbuk.go.kr",
+    "base_url": "https://www.chungbuk.go.kr",
+    "item_selector": "li.depth3_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.yearmonth"
+  },
+  "충청북도 청주시": {
+    "url": "https://www.cheongju.go.kr",
+    "base_url": "https://www.cheongju.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "충청북도 충주시": {
+    "url": "https://www.chungju.go.kr",
+    "base_url": "https://www.chungju.go.kr",
+    "item_selector": "li.rev",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "충청북도 제천시": {
+    "url": "https://www.jecheon.go.kr/www/selectBbsNttList.do?bbsNo=11&key=114",
+    "base_url": "https://www.jecheon.go.kr",
+    "item_selector": "li.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "a.depth4_text"
+  },
+  "충청북도 보은군": {
+    "url": "https://www.boeun.go.kr",
+    "base_url": "https://www.boeun.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "충청북도 옥천군": {
+    "url": "https://www.oc.go.kr",
+    "base_url": "https://www.oc.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "충청북도 영동군": {
+    "url": "https://www.yd21.go.kr",
+    "base_url": "https://www.yd21.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "충청북도 증평군": {
+    "url": "https://www.jp.go.kr",
+    "base_url": "https://www.jp.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.content-date"
+  },
+  "충청북도 진천군": {
+    "url": "https://jincheon.go.kr",
+    "base_url": "https://jincheon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "충청북도 괴산군": {
+    "url": "https://www.goesan.go.kr",
+    "base_url": "https://www.goesan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.ndate"
+  },
+  "충청북도 음성군": {
+    "url": "https://www.eumseong.go.kr/www/index.do",
+    "base_url": "httpss://www.eumseong.go.kr",
+    "item_selector": "li.depth_item.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "a.link"
+  },
+  "충청북도 단양군": {
+    "url": "https://www.danyang.go.kr",
+    "base_url": "https://www.danyang.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "em"
+  },
+  "충청남도 충청남도": {
+    "url": "https://www.chungnam.go.kr",
+    "base_url": "https://www.chungnam.go.kr",
+    "item_selector": "li.hd-dep3-li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "p.main-board-date"
+  },
+  "충청남도 천안시": {
+    "url": "https://www.cheonan.go.kr",
+    "base_url": "https://www.cheonan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "충청남도 공주시": {
+    "url": "https://www.gongju.go.kr/kr/index.do",
+    "base_url": "httpss://www.gongju.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.board-content-date"
+  },
+  "충청남도 보령시": {
+    "url": "https://www.brcn.go.kr",
+    "base_url": "https://www.brcn.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "충청남도 아산시": {
+    "url": "https://www.asan.go.kr/main/cms/?no=131",
+    "base_url": "https://www.asan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td.date"
+  },
+  "충청남도 서산시": {
+    "url": "https://www.seosan.go.kr/www/selectBbsNttList.do?bbsNo=97&key=1256",
+    "base_url": "https://www.seosan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "td"
+  },
+  "충청남도 논산시": {
+    "url": "https://nonsan.go.kr/kor/index.html",
+    "base_url": "httpss://nonsan.go.kr",
+    "item_selector": "li.intro-item.item-1",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "충청남도 계룡시": {
+    "url": "https://www.gyeryong.go.kr",
+    "base_url": "https://www.gyeryong.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "p"
+  },
+  "충청남도 당진시": {
+    "url": "https://www.dangjin.go.kr",
+    "base_url": "https://www.dangjin.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "충청남도 금산군": {
+    "url": "https://www.geumsan.go.kr",
+    "base_url": "https://www.geumsan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "충청남도 부여군": {
+    "url": "https://www.buyeo.go.kr/html/kr/",
+    "base_url": "httpss://www.buyeo.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "p"
+  },
+  "충청남도 서천군": {
+    "url": "https://www.seocheon.go.kr",
+    "base_url": "https://www.seocheon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "div.date_box"
+  },
+  "충청남도 청양군": {
+    "url": "https://www.cheongyang.go.kr",
+    "base_url": "https://www.cheongyang.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "strong.title"
+  },
+  "충청남도 홍성군": {
+    "url": "https://www.hongseong.go.kr",
+    "base_url": "https://www.hongseong.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "충청남도 예산군": {
+    "url": "https://www.yesan.go.kr",
+    "base_url": "https://www.yesan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "em"
+  },
+  "충청남도 태안군": {
+    "url": "https://www.taean.go.kr",
+    "base_url": "https://www.taean.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전북특별자치도 전북특별자치도": {
+    "url": "https://www.jeonbuk.go.kr",
+    "base_url": "https://www.jeonbuk.go.kr",
+    "item_selector": "div.intro",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전북특별자치도 전주시": {
+    "url": "https://www.jeonju.go.kr",
+    "base_url": "https://www.jeonju.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "style"
+  },
+  "전북특별자치도 군산시": {
+    "url": "https://www.gunsan.go.kr",
+    "base_url": "https://www.gunsan.go.kr",
+    "item_selector": "div",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전북특별자치도 익산시": {
+    "url": "https://www.iksan.go.kr",
+    "base_url": "https://www.iksan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "전북특별자치도 정읍시": {
+    "url": "https://www.jeongeup.go.kr",
+    "base_url": "https://www.jeongeup.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "전북특별자치도 남원시": {
+    "url": "https://www.namwon.go.kr",
+    "base_url": "https://www.namwon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.small"
+  },
+  "전북특별자치도 김제시": {
+    "url": "https://www.gimje.go.kr",
+    "base_url": "https://www.gimje.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "i"
+  },
+  "전북특별자치도 완주군": {
+    "url": "https://www.wanju.go.kr",
+    "base_url": "https://www.wanju.go.kr",
+    "item_selector": "div",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전북특별자치도 진안군": {
+    "url": "https://www.jinan.go.kr",
+    "base_url": "https://www.jinan.go.kr",
+    "item_selector": "li.l1",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전북특별자치도 무주군": {
+    "url": "https://www.muju.go.kr",
+    "base_url": "https://www.muju.go.kr",
+    "item_selector": "div",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전북특별자치도 장수군": {
+    "url": "https://www.jangsu.go.kr/index.jangsu",
+    "base_url": "httpss://www.jangsu.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "i.date"
+  },
+  "전북특별자치도 임실군": {
+    "url": "https://www.imsil.go.kr",
+    "base_url": "https://www.imsil.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "em"
+  },
+  "전북특별자치도 순창군": {
+    "url": "https://sunchang.go.kr",
+    "base_url": "https://sunchang.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "전북특별자치도 고창군": {
+    "url": "https://www.gochang.go.kr",
+    "base_url": "https://www.gochang.go.kr",
+    "item_selector": "div.img",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전북특별자치도 부안군": {
+    "url": "https://www.buan.go.kr",
+    "base_url": "https://www.buan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전라남도 전라남도": {
+    "url": "https://www.jeonnam.go.kr",
+    "base_url": "https://www.jeonnam.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전라남도 목포시": {
+    "url": "https://www.mokpo.go.kr",
+    "base_url": "https://www.mokpo.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "전라남도 여수시": {
+    "url": "https://www.yeosu.go.kr",
+    "base_url": "https://www.yeosu.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "전라남도 순천시": {
+    "url": "https://www.suncheon.go.kr",
+    "base_url": "https://www.suncheon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "전라남도 나주시": {
+    "url": "https://www.naju.go.kr",
+    "base_url": "https://www.naju.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "전라남도 광양시": {
+    "url": "https://www.gwangyang.go.kr",
+    "base_url": "https://www.gwangyang.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "전라남도 담양군": {
+    "url": "https://www.damyang.go.kr",
+    "base_url": "https://www.damyang.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "전라남도 곡성군": {
+    "url": "https://www.gokseong.go.kr",
+    "base_url": "https://www.gokseong.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "전라남도 구례군": {
+    "url": "https://www.gurye.go.kr/kr/main.do",
+    "base_url": "httpss://www.gurye.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "전라남도 고흥군": {
+    "url": "https://www.goheung.go.kr/index.do",
+    "base_url": "httpss://www.goheung.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "p.date"
+  },
+  "전라남도 보성군": {
+    "url": "https://www.boseong.go.kr",
+    "base_url": "https://www.boseong.go.kr",
+    "item_selector": "div",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전라남도 화순군": {
+    "url": "https://www.hwasun.go.kr",
+    "base_url": "https://www.hwasun.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "p.bo_cont.gray.font_s"
+  },
+  "전라남도 장흥군": {
+    "url": "https://www.jangheung.go.kr",
+    "base_url": "https://www.jangheung.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.ym"
+  },
+  "전라남도 강진군": {
+    "url": "https://www.gangjin.go.kr",
+    "base_url": "https://www.gangjin.go.kr",
+    "item_selector": "div.gnb_sub",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.txt_light"
+  },
+  "전라남도 해남군": {
+    "url": "https://www.haenam.go.kr",
+    "base_url": "https://www.haenam.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "전라남도 영암군": {
+    "url": "https://www.yeongam.go.kr",
+    "base_url": "https://www.yeongam.go.kr",
+    "item_selector": "div.tit",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전라남도 무안군": {
+    "url": "https://www.muan.go.kr",
+    "base_url": "https://www.muan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "전라남도 함평군": {
+    "url": "https://www.hampyeong.go.kr",
+    "base_url": "https://www.hampyeong.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "전라남도 영광군": {
+    "url": "https://www.yeonggwang.go.kr",
+    "base_url": "https://www.yeonggwang.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전라남도 장성군": {
+    "url": "https://www.jangseong.go.kr",
+    "base_url": "https://www.jangseong.go.kr",
+    "item_selector": "div.inner",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전라남도 완도군": {
+    "url": "https://www.wando.go.kr",
+    "base_url": "https://www.wando.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "전라남도 진도군": {
+    "url": "https://www.jindo.go.kr",
+    "base_url": "https://www.jindo.go.kr",
+    "item_selector": "li.b1",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "전라남도 신안군": {
+    "url": "https://www.shinan.go.kr",
+    "base_url": "https://www.shinan.go.kr",
+    "item_selector": "div.inner",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상북도 경상북도": {
+    "url": "https://www.gb.go.kr",
+    "base_url": "https://www.gb.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "경상북도 포항시": {
+    "url": "https://www.pohang.go.kr",
+    "base_url": "httpss://www.pohang.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span"
+  },
+  "경상북도 경주시": {
+    "url": "https://www.gyeongju.go.kr",
+    "base_url": "https://www.gyeongju.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상북도 김천시": {
+    "url": "https://gc.go.kr",
+    "base_url": "https://gc.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상북도 안동시": {
+    "url": "https://www.andong.go.kr/",
+    "base_url": "httpss://www.andong.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상북도 구미시": {
+    "url": "https://www.gumi.go.kr",
+    "base_url": "httpss://www.gumi.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "경상북도 영주시": {
+    "url": "https://www.yeongju.go.kr",
+    "base_url": "https://www.yeongju.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상북도 영천시": {
+    "url": "https://www.yc.go.kr",
+    "base_url": "https://www.yc.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "경상북도 상주시": {
+    "url": "https://www.sangju.go.kr/main2.tc",
+    "base_url": "httpss://www.sangju.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "경상북도 문경시": {
+    "url": "https://www.gbmg.go.kr",
+    "base_url": "https://www.gbmg.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "경상북도 경산시": {
+    "url": "https://gbgs.go.kr/",
+    "base_url": "https://gbgs.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상북도 의성군": {
+    "url": "https://www.usc.go.kr",
+    "base_url": "https://www.usc.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상북도 청송군": {
+    "url": "https://www.cs.go.kr",
+    "base_url": "https://www.cs.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "경상북도 영양군": {
+    "url": "https://www.yyg.go.kr",
+    "base_url": "https://www.yyg.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.month_txt"
+  },
+  "경상북도 영덕군": {
+    "url": "https://www.yd.go.kr",
+    "base_url": "https://www.yd.go.kr",
+    "item_selector": "div",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상북도 청도군": {
+    "url": "https://www.cheongdo.go.kr/open.content/ko/",
+    "base_url": "httpss://www.cheongdo.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상북도 고령군": {
+    "url": "https://www.goryeong.go.kr",
+    "base_url": "https://www.goryeong.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "경상북도 성주군": {
+    "url": "https://www.sj.go.kr",
+    "base_url": "https://www.sj.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "경상북도 칠곡군": {
+    "url": "https://www.chilgok.go.kr",
+    "base_url": "https://www.chilgok.go.kr",
+    "item_selector": "li.clFix",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "strong"
+  },
+  "경상북도 예천군": {
+    "url": "https://www.ycg.kr",
+    "base_url": "https://www.ycg.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상북도 봉화군": {
+    "url": "https://www.bonghwa.go.kr",
+    "base_url": "https://www.bonghwa.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상북도 울진군": {
+    "url": "https://www.uljin.go.kr",
+    "base_url": "https://www.uljin.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상북도 울릉군": {
+    "url": "https://www.ulleung.go.kr",
+    "base_url": "https://www.ulleung.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "경상남도 경상남도": {
+    "url": "https://www.gyeongnam.go.kr",
+    "base_url": "https://www.gyeongnam.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경상남도 창원시": {
+    "url": "https://www.changwon.go.kr",
+    "base_url": "https://www.changwon.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경상남도 진주시": {
+    "url": "https://www.jinju.go.kr",
+    "base_url": "https://www.jinju.go.kr",
+    "item_selector": "li.m1",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경상남도 통영시": {
+    "url": "https://www.tongyeong.go.kr",
+    "base_url": "https://www.tongyeong.go.kr",
+    "item_selector": "li",
+    "title_selector": "",
+    "link_selector": "",
+    "date_selector": ""
+  },
+  "경상남도 사천시": {
+    "url": "https://www.sacheon.go.kr",
+    "base_url": "https://www.sacheon.go.kr",
+    "item_selector": "li.m1",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경상남도 김해시": {
+    "url": "https://www.gimhae.go.kr",
+    "base_url": "https://www.gimhae.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경상남도 밀양시": {
+    "url": "https://www.miryang.go.kr",
+    "base_url": "https://www.miryang.go.kr",
+    "item_selector": "div.imgtit",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상남도 거제시": {
+    "url": "https://www.geoje.go.kr",
+    "base_url": "https://www.geoje.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상남도 양산시": {
+    "url": "https://www.yangsan.go.kr",
+    "base_url": "https://www.yangsan.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span"
+  },
+  "경상남도 의령군": {
+    "url": "https://www.uiryeong.go.kr",
+    "base_url": "https://www.uiryeong.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경상남도 함안군": {
+    "url": "https://www.haman.go.kr",
+    "base_url": "https://www.haman.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경상남도 창녕군": {
+    "url": "https://www.cng.go.kr",
+    "base_url": "https://www.cng.go.kr",
+    "item_selector": "div",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경상남도 고성군": {
+    "url": "https://www.goseong.go.kr",
+    "base_url": "https://www.goseong.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경상남도 남해군": {
+    "url": "https://www.namhae.go.kr",
+    "base_url": "https://www.namhae.go.kr",
+    "item_selector": "div.item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경상남도 하동군": {
+    "url": "https://www.hadong.go.kr",
+    "base_url": "https://www.hadong.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경상남도 산청군": {
+    "url": "https://www.sancheong.go.kr",
+    "base_url": "https://www.sancheong.go.kr",
+    "item_selector": "li.depth_item.depth4_item",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.skip"
+  },
+  "경상남도 함양군": {
+    "url": "https://www.hygn.go.kr",
+    "base_url": "https://www.hygn.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "경상남도 거창군": {
+    "url": "https://www.geochang.go.kr",
+    "base_url": "https://www.geochang.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "경상남도 합천군": {
+    "url": "https://www.hc.go.kr",
+    "base_url": "https://www.hc.go.kr",
+    "item_selector": "div",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": ""
+  },
+  "제주특별자치도 제주특별자치도": {
+    "url": "https://www.jeju.go.kr",
+    "base_url": "https://www.jeju.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "span.date"
+  },
+  "제주특별자치도 제주시": {
+    "url": "https://www.jejusi.go.kr/index.ac",
+    "base_url": "https://www.jejusi.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "script"
+  },
+  "제주특별자치도 서귀포시": {
+    "url": "https://www.seogwipo.go.kr/index.htm",
+    "base_url": "httpss://www.seogwipo.go.kr",
+    "item_selector": "li",
+    "title_selector": "a",
+    "link_selector": "a",
+    "date_selector": "p.text"
+  }
+}

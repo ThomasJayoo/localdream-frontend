@@ -1,14 +1,11 @@
-import os
-import re
-import json
 import time
-from collections import defaultdict
+import json
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 from datetime import datetime
+import re
 
-# ✅ 카테고리 키워드 사전
 CATEGORY_KEYWORDS = {
     "복지": ["복지", "지원", "창업", "노인", "청년", "생활", "의료", "돌봄"],
     "축제": ["축제", "행사", "공연", "페스티벌", "콘서트", "불꽃놀이"],
@@ -18,15 +15,13 @@ CATEGORY_KEYWORDS = {
     "인구대책": ["출산", "인구", "감소", "고령화", "청년인구", "정책"]
 }
 
-# ✅ 제목 기반 카테고리 추론
 def guess_category(title):
     for category, keywords in CATEGORY_KEYWORDS.items():
         for keyword in keywords:
             if keyword in title:
                 return category
-    return "커뮤니티뉴스"  # 기본값
+    return "커뮤니티뉴스"
 
-# ✅ 날짜 추출
 def extract_post_date(text_block):
     match = re.search(r'20\d{2}[./-]\d{1,2}[./-]\d{1,2}', text_block)
     if match:
@@ -38,17 +33,10 @@ def extract_post_date(text_block):
             return None
     return None
 
-# ✅ HTML에서 공지사항 추출 + 카테고리 분류
 def extract_notice_links_with_date(page_source, base_url, local):
     soup = BeautifulSoup(page_source, "html.parser")
     links = soup.find_all("a", href=True)
     notices = []
-    all_notice = []
-
-    for notice in notices:
-        category = notice["category"]
-        categorized_results[category].append(notice)
-        all_notices.append(notice)  # ← 추가
 
     for link in links:
         text = link.get_text(strip=True)
@@ -57,7 +45,6 @@ def extract_notice_links_with_date(page_source, base_url, local):
             continue
 
         full_url = href if href.startswith("http") else base_url.rstrip("/") + "/" + href.lstrip("/")
-
         parent = link.find_parent(["tr", "li", "div", "td"])
         context_text = parent.get_text(" ", strip=True) if parent else text
         full_page_text = soup.get_text(" ", strip=True)
@@ -75,10 +62,11 @@ def extract_notice_links_with_date(page_source, base_url, local):
 
     return notices
 
-# ✅ 메인 실행
 def main():
-    with open("selector_list_230_fixed_v2.json", "r", encoding="utf-8") as f:
-        region_urls = json.load(f)
+    test_urls = {
+        "서울특별시 중구": "https://www.junggu.seoul.kr/content.do?cmsid=14231",
+        "서울특별시 용산구": "https://www.yongsan.go.kr/portal/bbs/B0000041/list.do?menuNo=200228"
+    }
 
     options = Options()
     options.add_argument("--headless=new")
@@ -86,48 +74,24 @@ def main():
     options.add_argument("--disable-dev-shm-usage")
     driver = webdriver.Chrome(options=options)
 
-    categorized_results = {key: [] for key in CATEGORY_KEYWORDS.keys()}
-    failed_regions = []
+    all_results = []
 
-    for region, info in region_urls.items():
-        url = info.get("url")  # ✅ 여기서 info는 dict
-        if not url:
-            print(f"[스킵] {region}: URL 없음")
-            continue
-
+    for region, url in test_urls.items():
         try:
             print(f"[INFO] {region} 접속 중: {url}")
             driver.get(url)
-            time.sleep(2.5)
+            time.sleep(3)
             notices = extract_notice_links_with_date(driver.page_source, url, region)
-            print(f"[✅] {region}: {len(notices)}건 수집")
-            for notice in notices:
-                categorized_results[notice["category"]].append(notice)
-
+            print(f"[✅] {region}: {len(notices)}건 수집됨")
+            all_results.extend(notices)
         except Exception as e:
             print(f"[❌] {region} 실패: {e}")
-            failed_regions.append({
-                "region": region,
-                "url": url,
-                "error": str(e)
-            })
-with open("public/data/news_raw_all.json", "w", encoding="utf-8") as f:
-    json.dump(all_notices, f, ensure_ascii=False, indent=2)
- 
-   driver.quit()
+            continue
 
-    for category in categorized_results:
-        categorized_results[category].sort(key=lambda x: x["date"], reverse=True)
-        categorized_results[category] = categorized_results[category][:5]
+    driver.quit()
 
-    with open("public/data/news.json", "w", encoding="utf-8") as f:
-        json.dump(categorized_results, f, ensure_ascii=False, indent=2)
-
-    with open("fail_log.txt", "w", encoding="utf-8") as f:
-        for fail in failed_regions:
-            f.write(f"{fail['region']}\t{fail['url']}\n에러: {fail['error']}\n\n")
-
-    print(f"✅ 완료: news.json 저장, 실패 {len(failed_regions)}곳 → fail_log.txt 기록됨")
+    # 결과 출력
+    print(json.dumps(all_results, indent=2, ensure_ascii=False))
 
 if __name__ == "__main__":
     main()

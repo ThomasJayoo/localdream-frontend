@@ -1,0 +1,51 @@
+{
+  "main_crawler": {
+    "file": "crawl_all.py",
+    "method": "requests + BeautifulSoup",
+    "description": "기본 크롤링 수행. selector_list_230_fixed.json 기반 각 지자체 공지사항에서 뉴스 추출.",
+    "error_handling": [
+      "try-except로 개별 지역별 크롤링 실패 catch",
+      "로그 파일에 실패 지역, 오류 메시지 기록",
+      "빈 뉴스 항목 자동 skip"
+    ],
+    "output": "raw_news.json"
+  },
+  "gpt_classifier": {
+    "step": "내부 또는 후속 처리",
+    "description": "GPT를 호출하여 뉴스 제목을 6개 카테고리로 자동 분류",
+    "fallback": "분류 실패 시 '커뮤니티뉴스'로 지정"
+  },
+  "news_exporter": {
+    "output": "public/data/news.json",
+    "description": "카테고리별 정렬 후 최신 5개 뉴스만 저장. news.json 포맷으로 변환",
+    "structure": {
+      "복지": [],
+      "축제": [],
+      "관광홍보": [],
+      "건설행정": [],
+      "커뮤니티뉴스": [],
+      "인구대책": []
+    }
+  },
+  "backup_selenium": {
+    "file": "selenium_notice_enhanced.py",
+    "trigger": "crawl 실패 지역만 조건부 실행",
+    "description": "requests로 실패한 특정 지역만 selenium으로 재시도",
+    "output_merge": "raw_news.json에 append 후 dedup 처리"
+  },
+  "logging": {
+    "fail_log": "logs/failed_regions.log",
+    "run_log": "logs/crawl_log_20250602.log",
+    "json_dump_on_error": true
+  },
+  "automation": {
+    "bat_file": "generate_news_pipeline.bat",
+    "steps": [
+      "python backend/crawl_all.py",
+      "python backend/gpt_classifier.py",
+      "git add public/data/news.json",
+      "git commit -m \"🔄 뉴스 자동 업데이트\"",
+      "git push"
+    ]
+  }
+}
