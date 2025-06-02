@@ -1,8 +1,50 @@
 {
-  "인구대책": [],
-  "축제": [],
-  "복지": [],
-  "관광홍보": [],
-  "건설행정": [],
-  "커뮤니티뉴스": []
+  "인구대책": [
+    {
+      "local": "부산광역시 해운대구",
+      "title": "인구감소 대응 정책 설명회 개최",
+      "url": "https://haeundae.go.kr/pop-decline",
+      "date": "2025-06-01T11:00:00"
+    }
+  ],
+  "축제": [
+    {
+      "local": "광주광역시 서구",
+      "title": "서구 여름 축제 일정 안내",
+      "url": "https://gwangju.go.kr/summer-festival",
+      "date": "2025-06-02T09:00:00"
+    }
+  ],
+  "복지": [
+    {
+      "local": "서울특별시 강남구",
+      "title": "AI 창업 지원 프로그램 공고",
+      "url": "https://news.seoul.go.kr/ai-support",
+      "date": "2025-06-01T10:00:00"
+    }
+  ],
+  "관광홍보": [
+    {
+      "local": "제주특별자치도 제주시",
+      "title": "맞춤형 관광 홍보 캠페인 시작",
+      "url": "https://jeju.go.kr/tour-campaign",
+      "date": "2025-06-01T08:30:00"
+    }
+  ],
+  "건설행정": [
+    {
+      "local": "서울특별시 강북구",
+      "title": "스마트 도로 건설 프로젝트 설명회",
+      "url": "https://news.seoul.go.kr/infra",
+      "date": "2025-06-01T13:00:00"
+    }
+  ],
+  "커뮤니티뉴스": [
+    {
+      "local": "전라북도 전주시",
+      "title": "전주시민 커뮤니티 뉴스레터 6월호 발행",
+      "url": "https://jeonju.go.kr/newsletter",
+      "date": "2025-06-01T07:50:00"
+    }
+  ]
 }
